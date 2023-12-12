@@ -1,10 +1,25 @@
-- 👋 Hi, I’m @andacostt86
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ... desarrollo web 
-- 📫 How to reach me ...
+### Esenciales Git
 
-<!---
-andacostt86/andacostt86 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+>p<
+alguno de los temas que vimos
+</p>
+
+-Git init
+-Git status
+-Git add
+-Git commit -m
+-Git push
+
+**Entre otros comandos**
+
+## Algunos comandos en accion
+
+...
+git clone recursive https//github.com/andacostt86/SubmoduloExample
+
+git clone https://github.com/andacostt86/ecencialesGIT
+
+...
+<P>
+Hola mundo
+</P>
