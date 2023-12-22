@@ -1,25 +1,22 @@
-### Esenciales Git
+@@ -0,0 +1,10 @@
+- importar  titiritero  desde  'titiritero' ;
 
->p<
-alguno de los temas que vimos
-</p>
+ navegador  const =  espera  titiritero . lanzamiento ( { sin cabeza : 'nuevo' } ) ;
+ página  constante =  esperar  navegador . nueva pagina ( ) ;
+ sesión  constante =  esperar  página . objetivo ( ) . crearCDPSession ( ) ;
 
--Git init
--Git status
--Git add
--Git commit -m
--Git push
+ URL  constante =  'https://leverx.com/' ;
 
-**Entre otros comandos**
+ solicitudes  constantes =  [ ] ;
+sesión . on ( 'Network.requestWillBeSent' ,  e  =>  solicitudes . push ( e ) ) ;
+esperando  sesión . enviar ( 'Red.habilitar' ) ;
 
-## Algunos comandos en accion
+espera  la página . ir a ( url ) ;
 
-...
-git clone recursive https//github.com/andacostt86/SubmoduloExample
+ solicitud  constante =  solicitudes . buscar ( r  =>  r . solicitud . url  ===  url ) ;
+const  { solicitudId }  =  solicitud ;
 
-git clone https://github.com/andacostt86/ecencialesGIT
+const  { cuerpo }  =  esperar  sesión . enviar ( 'Network.getResponseBody' ,  { solicitudId } ) ;
+consola . registro ( cuerpo ) ;
 
-...
-<P>
-Hola mundo
-</P>
+Espera  al navegador . cerca ( ) ;
